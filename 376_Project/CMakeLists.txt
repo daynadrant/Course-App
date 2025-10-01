@@ -25,7 +25,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ${PROJECT_SOURCES}
 
         homepage.h homepage.cpp homepage.ui
-        loginpage.h loginpage.cpp loginpage.ui
+        loginpage.h loginpage.cpp loginpage.ui login.ui
 
 
 
