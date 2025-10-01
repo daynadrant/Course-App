@@ -33,14 +33,14 @@ public:
         LoginPage->resize(900, 600);
         loginButton = new QPushButton(LoginPage);
         loginButton->setObjectName("loginButton");
-        loginButton->setGeometry(QRect(450, 331, 91, 31));
+        loginButton->setGeometry(QRect(350, 330, 91, 31));
         emailEdit = new QLineEdit(LoginPage);
         emailEdit->setObjectName("emailEdit");
         emailEdit->setGeometry(QRect(350, 250, 191, 31));
         emailEdit->setClearButtonEnabled(false);
         createButton = new QPushButton(LoginPage);
         createButton->setObjectName("createButton");
-        createButton->setGeometry(QRect(350, 331, 91, 31));
+        createButton->setGeometry(QRect(450, 330, 91, 31));
         passwordEdit = new QLineEdit(LoginPage);
         passwordEdit->setObjectName("passwordEdit");
         passwordEdit->setGeometry(QRect(350, 290, 191, 31));
@@ -50,8 +50,8 @@ public:
         usernameEdit->setClearButtonEnabled(false);
         QWidget::setTabOrder(usernameEdit, emailEdit);
         QWidget::setTabOrder(emailEdit, passwordEdit);
-        QWidget::setTabOrder(passwordEdit, createButton);
-        QWidget::setTabOrder(createButton, loginButton);
+        QWidget::setTabOrder(passwordEdit, loginButton);
+        QWidget::setTabOrder(loginButton, createButton);
 
         retranslateUi(LoginPage);
 

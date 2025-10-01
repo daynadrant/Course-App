@@ -12,9 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QMainWindow>
-#include <QtWidgets/QMenuBar>
 #include <QtWidgets/QStackedWidget>
-#include <QtWidgets/QStatusBar>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -24,35 +22,31 @@ class Ui_MainWindow
 public:
     QWidget *widget;
     QStackedWidget *stackedWidget;
-    QWidget *page;
-    QWidget *page_2;
-    QMenuBar *menubar;
-    QStatusBar *statusbar;
+    QWidget *login;
+    QWidget *login1;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
         MainWindow->resize(900, 600);
+        MainWindow->setStyleSheet(QString::fromUtf8(""));
         widget = new QWidget(MainWindow);
         widget->setObjectName("widget");
         stackedWidget = new QStackedWidget(widget);
         stackedWidget->setObjectName("stackedWidget");
         stackedWidget->setGeometry(QRect(0, 0, 900, 600));
-        page = new QWidget();
-        page->setObjectName("page");
-        stackedWidget->addWidget(page);
-        page_2 = new QWidget();
-        page_2->setObjectName("page_2");
-        stackedWidget->addWidget(page_2);
+        stackedWidget->setStyleSheet(QString::fromUtf8("QStackedWidget {\n"
+"    background: transparent;\n"
+"}"));
+        stackedWidget->setFrameShadow(QFrame::Shadow::Plain);
+        login = new QWidget();
+        login->setObjectName("login");
+        stackedWidget->addWidget(login);
+        login1 = new QWidget();
+        login1->setObjectName("login1");
+        stackedWidget->addWidget(login1);
         MainWindow->setCentralWidget(widget);
-        menubar = new QMenuBar(MainWindow);
-        menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 900, 18));
-        MainWindow->setMenuBar(menubar);
-        statusbar = new QStatusBar(MainWindow);
-        statusbar->setObjectName("statusbar");
-        MainWindow->setStatusBar(statusbar);
 
         retranslateUi(MainWindow);
 

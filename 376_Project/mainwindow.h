@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
+#include "database.h"
 #include "loginpage.h"
 #include "homepage.h"
 
@@ -22,9 +22,11 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    Database* database;
 
-    LoginPage* login = new LoginPage(this);
-    HomePage* home = new HomePage(this);
+    // Pages
+    LoginPage* login;
+    HomePage* home;
 };
 
 #endif // MAINWINDOW_H

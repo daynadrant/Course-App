@@ -385,6 +385,12 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/database.h",
+			"MU",
+			"EWIEGA46WW/moc_database.cpp",
+			null
+		],
+		[
 			"C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/homepage.h",
 			"MU",
 			"EWIEGA46WW/moc_homepage.cpp",
@@ -476,6 +482,11 @@
 	"SETTINGS_FILE" : "C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/CMakeFiles/376_Project_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/database.cpp",
+			"MU",
+			null
+		],
 		[
 			"C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/homepage.cpp",
 			"MU",

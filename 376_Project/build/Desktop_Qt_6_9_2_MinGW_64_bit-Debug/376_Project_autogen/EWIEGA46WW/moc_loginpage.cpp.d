@@ -416,4 +416,5 @@ C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinG
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sys/types.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
-  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
+  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
+  C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/database.h
