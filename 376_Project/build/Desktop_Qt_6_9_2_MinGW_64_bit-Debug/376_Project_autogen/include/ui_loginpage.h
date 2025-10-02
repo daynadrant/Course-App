@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
@@ -25,6 +26,7 @@ public:
     QPushButton *createButton;
     QLineEdit *passwordEdit;
     QLineEdit *usernameEdit;
+    QLabel *label;
 
     void setupUi(QWidget *LoginPage)
     {
@@ -44,10 +46,30 @@ public:
         passwordEdit = new QLineEdit(LoginPage);
         passwordEdit->setObjectName("passwordEdit");
         passwordEdit->setGeometry(QRect(350, 290, 191, 31));
+        passwordEdit->setEchoMode(QLineEdit::EchoMode::Password);
         usernameEdit = new QLineEdit(LoginPage);
         usernameEdit->setObjectName("usernameEdit");
         usernameEdit->setGeometry(QRect(350, 210, 191, 31));
         usernameEdit->setClearButtonEnabled(false);
+        label = new QLabel(LoginPage);
+        label->setObjectName("label");
+        label->setGeometry(QRect(290, 70, 320, 134));
+        QFont font;
+        font.setFamilies({QString::fromUtf8("8514oem")});
+        font.setPointSize(9);
+        font.setBold(false);
+        label->setFont(font);
+        label->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"    background-color: #4CAF50;\n"
+"    color: white;\n"
+"    border-radius: 8px;\n"
+"    padding: 6px 12px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #45a049;\n"
+"}\n"
+""));
+        label->setAlignment(Qt::AlignmentFlag::AlignCenter);
         QWidget::setTabOrder(usernameEdit, emailEdit);
         QWidget::setTabOrder(emailEdit, passwordEdit);
         QWidget::setTabOrder(passwordEdit, loginButton);
@@ -71,6 +93,7 @@ public:
         usernameEdit->setInputMask(QString());
         usernameEdit->setText(QString());
         usernameEdit->setPlaceholderText(QCoreApplication::translate("LoginPage", "username", nullptr));
+        label->setText(QCoreApplication::translate("LoginPage", "<html><head/><body><p>Welcome! </p><p>Ready to Rise Through the Ranks?</p></body></html>", nullptr));
     } // retranslateUi
 
 };

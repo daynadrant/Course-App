@@ -2,6 +2,7 @@ C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinG
   C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/376_Project_autogen/moc_predefs.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/QFlags \
   C:/Qt/6.9.2/mingw_64/include/QtCore/QIODevice \
+  C:/Qt/6.9.2/mingw_64/include/QtCore/QJsonArray \
   C:/Qt/6.9.2/mingw_64/include/QtCore/QJsonDocument \
   C:/Qt/6.9.2/mingw_64/include/QtCore/QJsonObject \
   C:/Qt/6.9.2/mingw_64/include/QtCore/QList \
@@ -68,6 +69,7 @@ C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinG
   C:/Qt/6.9.2/mingw_64/include/QtCore/qiodevicebase.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qiterable.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qiterator.h \
+  C:/Qt/6.9.2/mingw_64/include/QtCore/qjsonarray.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qjsondocument.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qjsonobject.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qjsonparseerror.h \
@@ -379,4 +381,6 @@ C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinG
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sys/types.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
-  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
+  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
+  C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/courses.h \
+  C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/rank_type.h

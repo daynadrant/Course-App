@@ -1,6 +1,7 @@
 376_Project_autogen/timestamp: \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/QFlags \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/QIODevice \
+	C:/Qt/6.9.2/mingw_64/include/QtCore/QJsonArray \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/QJsonDocument \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/QJsonObject \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/QList \
@@ -67,6 +68,7 @@
 	C:/Qt/6.9.2/mingw_64/include/QtCore/qiodevicebase.h \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/qiterable.h \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/qiterator.h \
+	C:/Qt/6.9.2/mingw_64/include/QtCore/qjsonarray.h \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/qjsondocument.h \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/qjsonobject.h \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/qjsonparseerror.h \
@@ -197,8 +199,10 @@
 	C:/Qt/6.9.2/mingw_64/include/QtNetwork/qtnetwork-config.h \
 	C:/Qt/6.9.2/mingw_64/include/QtNetwork/qtnetworkexports.h \
 	C:/Qt/6.9.2/mingw_64/include/QtNetwork/qtnetworkglobal.h \
+	C:/Qt/6.9.2/mingw_64/include/QtWidgets/QDialog \
 	C:/Qt/6.9.2/mingw_64/include/QtWidgets/QMainWindow \
 	C:/Qt/6.9.2/mingw_64/include/QtWidgets/QWidget \
+	C:/Qt/6.9.2/mingw_64/include/QtWidgets/qdialog.h \
 	C:/Qt/6.9.2/mingw_64/include/QtWidgets/qmainwindow.h \
 	C:/Qt/6.9.2/mingw_64/include/QtWidgets/qsizepolicy.h \
 	C:/Qt/6.9.2/mingw_64/include/QtWidgets/qtabwidget.h \
@@ -663,6 +667,10 @@
 	C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake \
 	C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CMakeRCCompiler.cmake \
 	C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CMakeSystem.cmake \
+	C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/coursecreate.cpp \
+	C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/coursecreate.h \
+	C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/courses.cpp \
+	C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/courses.h \
 	C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/database.cpp \
 	C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/database.h \
 	C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/homepage.cpp \
@@ -672,6 +680,9 @@
 	C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/main.cpp \
 	C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/mainwindow.cpp \
 	C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/mainwindow.h \
+	C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/rank_type.h \
+	C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/resource.qrc \
+	C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/coursecreate.ui \
 	C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/homepage.ui \
 	C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/loginpage.ui \
 	C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/mainwindow.ui \

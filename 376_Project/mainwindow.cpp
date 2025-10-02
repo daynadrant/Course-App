@@ -15,7 +15,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->stackedWidget->addWidget(home);
 
     // Add listeners
-    connect(database, &Database::loginSuccess, this, [this]() {
+    connect(home, &HomePage::login, this, [this]() {
         ui->stackedWidget->setCurrentWidget(home);
     });
 

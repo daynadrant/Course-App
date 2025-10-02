@@ -28,10 +28,10 @@ public:
     QGroupBox *friendsBox;
     QListWidget *friendsList;
     QPushButton *addFriendButton;
-    QLabel *label;
+    QLabel *usernameLabel;
     QLabel *label_2;
-    QLabel *label_3;
-    QLabel *label_4;
+    QLabel *imageLabel;
+    QLabel *studyHoursLabel;
     QPushButton *pushButton_5;
     QPushButton *pushButton_2;
     QPushButton *pushButton_3;
@@ -137,39 +137,39 @@ public:
 "QPushButton:pressed {\n"
 "    background-color: #3d8c40;\n"
 "}"));
-        label = new QLabel(HomePage);
-        label->setObjectName("label");
-        label->setGeometry(QRect(370, 120, 161, 21));
-        label->setStyleSheet(QString::fromUtf8("QLabel {\n"
+        usernameLabel = new QLabel(HomePage);
+        usernameLabel->setObjectName("usernameLabel");
+        usernameLabel->setGeometry(QRect(370, 60, 161, 21));
+        usernameLabel->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "    font: bold 11pt \"Segoe UI\";\n"
 "    color: #222;\n"
 "}"));
-        label->setAlignment(Qt::AlignmentFlag::AlignCenter);
+        usernameLabel->setAlignment(Qt::AlignmentFlag::AlignCenter);
         label_2 = new QLabel(HomePage);
         label_2->setObjectName("label_2");
-        label_2->setGeometry(QRect(370, 170, 161, 21));
+        label_2->setGeometry(QRect(370, 110, 161, 21));
         label_2->setLayoutDirection(Qt::LayoutDirection::LeftToRight);
         label_2->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "    font: bold 13pt \"Segoe UI\";\n"
 "    color: #222;\n"
 "}"));
         label_2->setAlignment(Qt::AlignmentFlag::AlignCenter);
-        label_3 = new QLabel(HomePage);
-        label_3->setObjectName("label_3");
-        label_3->setGeometry(QRect(370, 220, 161, 104));
-        label_3->setStyleSheet(QString::fromUtf8("QLabel {\n"
+        imageLabel = new QLabel(HomePage);
+        imageLabel->setObjectName("imageLabel");
+        imageLabel->setGeometry(QRect(370, 140, 161, 221));
+        imageLabel->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "    border: 2px dashed #aaa;\n"
 "    min-height: 100px;\n"
 "    min-width: 100px;\n"
 "}"));
-        label_4 = new QLabel(HomePage);
-        label_4->setObjectName("label_4");
-        label_4->setGeometry(QRect(360, 370, 191, 21));
-        label_4->setStyleSheet(QString::fromUtf8("QLabel {\n"
+        studyHoursLabel = new QLabel(HomePage);
+        studyHoursLabel->setObjectName("studyHoursLabel");
+        studyHoursLabel->setGeometry(QRect(360, 370, 191, 21));
+        studyHoursLabel->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "    font: bold 13pt \"Segoe UI\";\n"
 "    color: #222;\n"
 "}"));
-        label_4->setAlignment(Qt::AlignmentFlag::AlignCenter);
+        studyHoursLabel->setAlignment(Qt::AlignmentFlag::AlignCenter);
         pushButton_5 = new QPushButton(HomePage);
         pushButton_5->setObjectName("pushButton_5");
         pushButton_5->setGeometry(QRect(810, 550, 71, 31));
@@ -263,10 +263,10 @@ public:
         addCourseButton->setText(QCoreApplication::translate("HomePage", "Add Course", nullptr));
         friendsBox->setTitle(QCoreApplication::translate("HomePage", "Friends:", nullptr));
         addFriendButton->setText(QCoreApplication::translate("HomePage", "Add Friend", nullptr));
-        label->setText(QCoreApplication::translate("HomePage", "Username: Ashton", nullptr));
+        usernameLabel->setText(QCoreApplication::translate("HomePage", "Username: Ashton", nullptr));
         label_2->setText(QCoreApplication::translate("HomePage", "Overall Rank", nullptr));
-        label_3->setText(QCoreApplication::translate("HomePage", "*IMAGE HERE*", nullptr));
-        label_4->setText(QCoreApplication::translate("HomePage", "Total Study Hours: 74", nullptr));
+        imageLabel->setText(QCoreApplication::translate("HomePage", "*IMAGE HERE*", nullptr));
+        studyHoursLabel->setText(QCoreApplication::translate("HomePage", "Total Study Hours: 74", nullptr));
         pushButton_5->setText(QCoreApplication::translate("HomePage", "Help (?)", nullptr));
         pushButton_2->setText(QCoreApplication::translate("HomePage", "Log Study \n"
 "Hours", nullptr));

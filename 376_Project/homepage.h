@@ -3,6 +3,8 @@
 
 #include <QWidget>
 #include "database.h"
+#include "rank_type.h"
+#include "coursecreate.h"
 
 namespace Ui {
 class HomePage;
@@ -14,6 +16,7 @@ class HomePage : public QWidget
 
 signals:
     void logout();
+    void login();
 
 public:
     explicit HomePage(
@@ -23,6 +26,8 @@ public:
 
 private slots:
     void on_logoutButton_clicked();
+
+    void on_addCourseButton_clicked();
 
 private:
     Ui::HomePage *ui;

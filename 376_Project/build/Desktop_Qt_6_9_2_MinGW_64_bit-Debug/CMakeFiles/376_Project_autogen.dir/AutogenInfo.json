@@ -376,7 +376,8 @@
 		"C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6/QtPublicWindowsHelpers.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
 		"C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6/Qt6Dependencies.cmake",
-		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/GNUInstallDirs.cmake"
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/GNUInstallDirs.cmake",
+		"C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/resource.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project",
 	"CROSS_CONFIG" : false,
@@ -384,6 +385,18 @@
 	"DEP_FILE_RULE_NAME" : "376_Project_autogen/timestamp",
 	"HEADERS" : 
 	[
+		[
+			"C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/coursecreate.h",
+			"MU",
+			"EWIEGA46WW/moc_coursecreate.cpp",
+			null
+		],
+		[
+			"C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/courses.h",
+			"MU",
+			"EWIEGA46WW/moc_courses.cpp",
+			null
+		],
 		[
 			"C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/database.h",
 			"MU",
@@ -406,6 +419,12 @@
 			"C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
+			null
+		],
+		[
+			"C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/rank_type.h",
+			"MU",
+			"EWIEGA46WW/moc_rank_type.cpp",
 			null
 		]
 	],
@@ -482,6 +501,16 @@
 	"SETTINGS_FILE" : "C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/CMakeFiles/376_Project_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/coursecreate.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/courses.cpp",
+			"MU",
+			null
+		],
 		[
 			"C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/database.cpp",
 			"MU",

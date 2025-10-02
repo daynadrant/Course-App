@@ -27,6 +27,12 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         homepage.h homepage.cpp homepage.ui
         loginpage.h loginpage.cpp loginpage.ui login.ui
         database.h database.cpp
+        rank_type.h
+        resource.qrc
+        courses.h
+        courses.cpp
+        coursecreate.h coursecreate.cpp coursecreate.ui
+
 
 
 

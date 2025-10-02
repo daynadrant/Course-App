@@ -40,16 +40,19 @@ template <> constexpr inline auto Database::qt_create_metaobjectdata<qt_meta_tag
     namespace QMC = QtMocConstants;
     QtMocHelpers::StringRefStorage qt_stringData {
         "Database",
-        "loginSuccess",
+        "populateHomePage",
         "",
-        "loginFailure"
+        "username",
+        "RankType",
+        "rank",
+        "studyHours"
     };
 
     QtMocHelpers::UintData qt_methods {
-        // Signal 'loginSuccess'
-        QtMocHelpers::SignalData<void()>(1, 2, QMC::AccessPublic, QMetaType::Void),
-        // Signal 'loginFailure'
-        QtMocHelpers::SignalData<void()>(3, 2, QMC::AccessPublic, QMetaType::Void),
+        // Signal 'populateHomePage'
+        QtMocHelpers::SignalData<void(const QString &, RankType, int)>(1, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QString, 3 }, { 0x80000000 | 4, 5 }, { QMetaType::Int, 6 },
+        }}),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -73,15 +76,12 @@ void Database::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
     auto *_t = static_cast<Database *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: _t->loginSuccess(); break;
-        case 1: _t->loginFailure(); break;
+        case 0: _t->populateHomePage((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<RankType>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[3]))); break;
         default: ;
         }
     }
     if (_c == QMetaObject::IndexOfMethod) {
-        if (QtMocHelpers::indexOfMethod<void (Database::*)()>(_a, &Database::loginSuccess, 0))
-            return;
-        if (QtMocHelpers::indexOfMethod<void (Database::*)()>(_a, &Database::loginFailure, 1))
+        if (QtMocHelpers::indexOfMethod<void (Database::*)(const QString & , RankType , int )>(_a, &Database::populateHomePage, 0))
             return;
     }
 }
@@ -105,27 +105,21 @@ int Database::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 1)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 1;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
+        if (_id < 1)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 2;
+        _id -= 1;
     }
     return _id;
 }
 
 // SIGNAL 0
-void Database::loginSuccess()
+void Database::populateHomePage(const QString & _t1, RankType _t2, int _t3)
 {
-    QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
-}
-
-// SIGNAL 1
-void Database::loginFailure()
-{
-    QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
+    QMetaObject::activate<void>(this, &staticMetaObject, 0, nullptr, _t1, _t2, _t3);
 }
 QT_WARNING_POP
