@@ -5,6 +5,10 @@
 #include "database.h"
 #include "loginpage.h"
 #include "homepage.h"
+#include "coursepage.h"
+#include "loadingdialog.h"
+#include "errordialog.h"
+#include "allcoursespage.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -16,10 +20,6 @@ class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
-public:
-    MainWindow(QWidget *parent = nullptr);
-    ~MainWindow();
-
 private:
     Ui::MainWindow *ui;
     Database* database;
@@ -27,6 +27,18 @@ private:
     // Pages
     LoginPage* login;
     HomePage* home;
+    CoursePage* course;
+    AllCoursesPage* allCourses;
+
+    // Loading screen
+    LoadingDialog* loading = nullptr;
+
+public:
+    MainWindow(QWidget *parent = nullptr);
+    ~MainWindow();
+
+private:
+    void showLoading();
 };
 
 #endif // MAINWINDOW_H

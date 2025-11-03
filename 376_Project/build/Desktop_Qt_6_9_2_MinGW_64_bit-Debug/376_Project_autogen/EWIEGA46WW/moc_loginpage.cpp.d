@@ -1,5 +1,6 @@
 C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/376_Project_autogen/EWIEGA46WW/moc_loginpage.cpp: C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/loginpage.h \
   C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/376_Project_autogen/moc_predefs.h \
+  C:/Qt/6.9.2/mingw_64/include/QtCore/QEventLoop \
   C:/Qt/6.9.2/mingw_64/include/QtCore/QFlags \
   C:/Qt/6.9.2/mingw_64/include/QtCore/QIODevice \
   C:/Qt/6.9.2/mingw_64/include/QtCore/QJsonArray \
@@ -13,6 +14,7 @@ C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinG
   C:/Qt/6.9.2/mingw_64/include/QtCore/QUrl \
   C:/Qt/6.9.2/mingw_64/include/QtCore/QVariant \
   C:/Qt/6.9.2/mingw_64/include/QtCore/q17memory.h \
+  C:/Qt/6.9.2/mingw_64/include/QtCore/q20algorithm.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/q20iterator.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/q20memory.h \
@@ -20,6 +22,7 @@ C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinG
   C:/Qt/6.9.2/mingw_64/include/QtCore/q20utility.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/q23utility.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/q26numeric.h \
+  C:/Qt/6.9.2/mingw_64/include/QtCore/qabstracteventdispatcher.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qalgorithms.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qanystringview.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qarraydata.h \
@@ -29,6 +32,7 @@ C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinG
   C:/Qt/6.9.2/mingw_64/include/QtCore/qatomic.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qatomic_cxx11.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qbasicatomic.h \
+  C:/Qt/6.9.2/mingw_64/include/QtCore/qbasictimer.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qbindingstorage.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qbytearray.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qbytearrayalgorithms.h \
@@ -48,13 +52,20 @@ C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinG
   C:/Qt/6.9.2/mingw_64/include/QtCore/qcontainerinfo.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qcontainertools_impl.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qcontiguouscache.h \
+  C:/Qt/6.9.2/mingw_64/include/QtCore/qcoreapplication.h \
+  C:/Qt/6.9.2/mingw_64/include/QtCore/qcoreapplication_platform.h \
+  C:/Qt/6.9.2/mingw_64/include/QtCore/qcoreevent.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qcryptographichash.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qdarwinhelpers.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qdatastream.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qdatetime.h \
+  C:/Qt/6.9.2/mingw_64/include/QtCore/qdeadlinetimer.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qdebug.h \
+  C:/Qt/6.9.2/mingw_64/include/QtCore/qelapsedtimer.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qendian.h \
+  C:/Qt/6.9.2/mingw_64/include/QtCore/qeventloop.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qexceptionhandling.h \
+  C:/Qt/6.9.2/mingw_64/include/QtCore/qfactoryinterface.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qflags.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qfloat16.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qforeach.h \
@@ -87,6 +98,7 @@ C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinG
   C:/Qt/6.9.2/mingw_64/include/QtCore/qmetatype.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qminmax.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qnamespace.h \
+  C:/Qt/6.9.2/mingw_64/include/QtCore/qnativeinterface.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qnumeric.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qobject.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qobject_impl.h \
@@ -94,7 +106,9 @@ C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinG
   C:/Qt/6.9.2/mingw_64/include/QtCore/qobjectdefs_impl.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qoverload.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qpair.h \
+  C:/Qt/6.9.2/mingw_64/include/QtCore/qplugin.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qpoint.h \
+  C:/Qt/6.9.2/mingw_64/include/QtCore/qpointer.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qprocessordetection.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qrect.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qrefcount.h \
@@ -153,6 +167,7 @@ C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinG
   C:/Qt/6.9.2/mingw_64/include/QtCore/qversiontagging.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qxptype_traits.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qyieldcpu.h \
+  C:/Qt/6.9.2/mingw_64/include/QtGui/QMovie \
   C:/Qt/6.9.2/mingw_64/include/QtGui/qaction.h \
   C:/Qt/6.9.2/mingw_64/include/QtGui/qbitmap.h \
   C:/Qt/6.9.2/mingw_64/include/QtGui/qbrush.h \
@@ -164,15 +179,20 @@ C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinG
   C:/Qt/6.9.2/mingw_64/include/QtGui/qfontvariableaxis.h \
   C:/Qt/6.9.2/mingw_64/include/QtGui/qicon.h \
   C:/Qt/6.9.2/mingw_64/include/QtGui/qimage.h \
+  C:/Qt/6.9.2/mingw_64/include/QtGui/qimageiohandler.h \
+  C:/Qt/6.9.2/mingw_64/include/QtGui/qimagereader.h \
   C:/Qt/6.9.2/mingw_64/include/QtGui/qkeysequence.h \
+  C:/Qt/6.9.2/mingw_64/include/QtGui/qmovie.h \
   C:/Qt/6.9.2/mingw_64/include/QtGui/qpaintdevice.h \
   C:/Qt/6.9.2/mingw_64/include/QtGui/qpalette.h \
+  C:/Qt/6.9.2/mingw_64/include/QtGui/qpicture.h \
   C:/Qt/6.9.2/mingw_64/include/QtGui/qpixelformat.h \
   C:/Qt/6.9.2/mingw_64/include/QtGui/qpixmap.h \
   C:/Qt/6.9.2/mingw_64/include/QtGui/qpolygon.h \
   C:/Qt/6.9.2/mingw_64/include/QtGui/qregion.h \
   C:/Qt/6.9.2/mingw_64/include/QtGui/qrgb.h \
   C:/Qt/6.9.2/mingw_64/include/QtGui/qrgba64.h \
+  C:/Qt/6.9.2/mingw_64/include/QtGui/qtextdocument.h \
   C:/Qt/6.9.2/mingw_64/include/QtGui/qtgui-config.h \
   C:/Qt/6.9.2/mingw_64/include/QtGui/qtguiexports.h \
   C:/Qt/6.9.2/mingw_64/include/QtGui/qtguiglobal.h \
@@ -200,7 +220,12 @@ C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinG
   C:/Qt/6.9.2/mingw_64/include/QtNetwork/qtnetwork-config.h \
   C:/Qt/6.9.2/mingw_64/include/QtNetwork/qtnetworkexports.h \
   C:/Qt/6.9.2/mingw_64/include/QtNetwork/qtnetworkglobal.h \
+  C:/Qt/6.9.2/mingw_64/include/QtWidgets/QDialog \
+  C:/Qt/6.9.2/mingw_64/include/QtWidgets/QLabel \
   C:/Qt/6.9.2/mingw_64/include/QtWidgets/QWidget \
+  C:/Qt/6.9.2/mingw_64/include/QtWidgets/qdialog.h \
+  C:/Qt/6.9.2/mingw_64/include/QtWidgets/qframe.h \
+  C:/Qt/6.9.2/mingw_64/include/QtWidgets/qlabel.h \
   C:/Qt/6.9.2/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.9.2/mingw_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.9.2/mingw_64/include/QtWidgets/qtwidgetsexports.h \
@@ -419,6 +444,10 @@ C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinG
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
-  C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/courses.h \
+  C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/course.h \
+  C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/coursedata.h \
   C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/database.h \
-  C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/rank_type.h
+  C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/errordialog.h \
+  C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/friend_data.h \
+  C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/rank_type.h \
+  C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/userdata.h

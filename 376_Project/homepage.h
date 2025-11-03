@@ -2,9 +2,15 @@
 #define HOMEPAGE_H
 
 #include <QWidget>
+#include <QListWidgetItem>
 #include "database.h"
 #include "rank_type.h"
-#include "coursecreate.h"
+#include "coursecreatedialog.h"
+#include "helpdialog.h"
+#include "errordialog.h"
+#include "addfrienddialog.h"
+#include "loghoursdialog.h"
+#include "timerdialog.h"
 
 namespace Ui {
 class HomePage;
@@ -17,6 +23,8 @@ class HomePage : public QWidget
 signals:
     void logout();
     void login();
+    void loadCourse(const QString& courseName);
+    void goToCourses();
 
 public:
     explicit HomePage(
@@ -28,6 +36,18 @@ private slots:
     void on_logoutButton_clicked();
 
     void on_addCourseButton_clicked();
+
+    void on_helpButton_clicked();
+
+    void on_coursesList_itemDoubleClicked(QListWidgetItem* item);
+
+    void on_addFriendButton_clicked();
+
+    void on_logHoursButton_clicked();
+
+    void on_studyTimerButton_clicked();
+
+    void on_coursesButton_clicked();
 
 private:
     Ui::HomePage *ui;

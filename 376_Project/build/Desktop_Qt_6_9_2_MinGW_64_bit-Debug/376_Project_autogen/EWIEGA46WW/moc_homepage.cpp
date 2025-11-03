@@ -43,8 +43,19 @@ template <> constexpr inline auto HomePage::qt_create_metaobjectdata<qt_meta_tag
         "logout",
         "",
         "login",
+        "loadCourse",
+        "courseName",
+        "goToCourses",
         "on_logoutButton_clicked",
-        "on_addCourseButton_clicked"
+        "on_addCourseButton_clicked",
+        "on_helpButton_clicked",
+        "on_coursesList_itemDoubleClicked",
+        "QListWidgetItem*",
+        "item",
+        "on_addFriendButton_clicked",
+        "on_logHoursButton_clicked",
+        "on_studyTimerButton_clicked",
+        "on_coursesButton_clicked"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -52,10 +63,30 @@ template <> constexpr inline auto HomePage::qt_create_metaobjectdata<qt_meta_tag
         QtMocHelpers::SignalData<void()>(1, 2, QMC::AccessPublic, QMetaType::Void),
         // Signal 'login'
         QtMocHelpers::SignalData<void()>(3, 2, QMC::AccessPublic, QMetaType::Void),
+        // Signal 'loadCourse'
+        QtMocHelpers::SignalData<void(const QString &)>(4, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QString, 5 },
+        }}),
+        // Signal 'goToCourses'
+        QtMocHelpers::SignalData<void()>(6, 2, QMC::AccessPublic, QMetaType::Void),
         // Slot 'on_logoutButton_clicked'
-        QtMocHelpers::SlotData<void()>(4, 2, QMC::AccessPrivate, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(7, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'on_addCourseButton_clicked'
-        QtMocHelpers::SlotData<void()>(5, 2, QMC::AccessPrivate, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(8, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_helpButton_clicked'
+        QtMocHelpers::SlotData<void()>(9, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_coursesList_itemDoubleClicked'
+        QtMocHelpers::SlotData<void(QListWidgetItem *)>(10, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { 0x80000000 | 11, 12 },
+        }}),
+        // Slot 'on_addFriendButton_clicked'
+        QtMocHelpers::SlotData<void()>(13, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_logHoursButton_clicked'
+        QtMocHelpers::SlotData<void()>(14, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_studyTimerButton_clicked'
+        QtMocHelpers::SlotData<void()>(15, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_coursesButton_clicked'
+        QtMocHelpers::SlotData<void()>(16, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -81,8 +112,16 @@ void HomePage::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
         switch (_id) {
         case 0: _t->logout(); break;
         case 1: _t->login(); break;
-        case 2: _t->on_logoutButton_clicked(); break;
-        case 3: _t->on_addCourseButton_clicked(); break;
+        case 2: _t->loadCourse((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 3: _t->goToCourses(); break;
+        case 4: _t->on_logoutButton_clicked(); break;
+        case 5: _t->on_addCourseButton_clicked(); break;
+        case 6: _t->on_helpButton_clicked(); break;
+        case 7: _t->on_coursesList_itemDoubleClicked((*reinterpret_cast< std::add_pointer_t<QListWidgetItem*>>(_a[1]))); break;
+        case 8: _t->on_addFriendButton_clicked(); break;
+        case 9: _t->on_logHoursButton_clicked(); break;
+        case 10: _t->on_studyTimerButton_clicked(); break;
+        case 11: _t->on_coursesButton_clicked(); break;
         default: ;
         }
     }
@@ -90,6 +129,10 @@ void HomePage::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
         if (QtMocHelpers::indexOfMethod<void (HomePage::*)()>(_a, &HomePage::logout, 0))
             return;
         if (QtMocHelpers::indexOfMethod<void (HomePage::*)()>(_a, &HomePage::login, 1))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (HomePage::*)(const QString & )>(_a, &HomePage::loadCourse, 2))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (HomePage::*)()>(_a, &HomePage::goToCourses, 3))
             return;
     }
 }
@@ -113,14 +156,14 @@ int HomePage::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 4)
+        if (_id < 12)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 12;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 4)
+        if (_id < 12)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 4;
+        _id -= 12;
     }
     return _id;
 }
@@ -135,5 +178,17 @@ void HomePage::logout()
 void HomePage::login()
 {
     QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
+}
+
+// SIGNAL 2
+void HomePage::loadCourse(const QString & _t1)
+{
+    QMetaObject::activate<void>(this, &staticMetaObject, 2, nullptr, _t1);
+}
+
+// SIGNAL 3
+void HomePage::goToCourses()
+{
+    QMetaObject::activate(this, &staticMetaObject, 3, nullptr);
 }
 QT_WARNING_POP

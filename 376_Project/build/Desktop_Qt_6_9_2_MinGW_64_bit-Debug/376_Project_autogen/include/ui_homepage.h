@@ -32,11 +32,12 @@ public:
     QLabel *label_2;
     QLabel *imageLabel;
     QLabel *studyHoursLabel;
-    QPushButton *pushButton_5;
-    QPushButton *pushButton_2;
-    QPushButton *pushButton_3;
+    QPushButton *helpButton;
+    QPushButton *logHoursButton;
+    QPushButton *studyTimerButton;
     QPushButton *pushButton_4;
     QPushButton *logoutButton;
+    QPushButton *coursesButton;
 
     void setupUi(QWidget *HomePage)
     {
@@ -57,6 +58,7 @@ public:
 "    subcontrol-origin: margin;\n"
 "    left: 10px;\n"
 "    padding: 0 5px;\n"
+"	color: transparent;\n"
 "}"));
         coursesList = new QListWidget(coursesBox);
         coursesList->setObjectName("coursesList");
@@ -170,10 +172,10 @@ public:
 "    color: #222;\n"
 "}"));
         studyHoursLabel->setAlignment(Qt::AlignmentFlag::AlignCenter);
-        pushButton_5 = new QPushButton(HomePage);
-        pushButton_5->setObjectName("pushButton_5");
-        pushButton_5->setGeometry(QRect(810, 550, 71, 31));
-        pushButton_5->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        helpButton = new QPushButton(HomePage);
+        helpButton->setObjectName("helpButton");
+        helpButton->setGeometry(QRect(810, 550, 71, 31));
+        helpButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    background-color: #4CAF50;\n"
 "    color: white;\n"
 "    font: bold 8pt \"Segoe UI\";\n"
@@ -186,10 +188,10 @@ public:
 "QPushButton:pressed {\n"
 "    background-color: #3d8c40;\n"
 "}"));
-        pushButton_2 = new QPushButton(HomePage);
-        pushButton_2->setObjectName("pushButton_2");
-        pushButton_2->setGeometry(QRect(310, 410, 81, 41));
-        pushButton_2->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        logHoursButton = new QPushButton(HomePage);
+        logHoursButton->setObjectName("logHoursButton");
+        logHoursButton->setGeometry(QRect(310, 410, 81, 41));
+        logHoursButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    background-color: #4CAF50;\n"
 "    color: white;\n"
 "    font: bold 8pt \"Segoe UI\";\n"
@@ -202,10 +204,10 @@ public:
 "QPushButton:pressed {\n"
 "    background-color: #3d8c40;\n"
 "}"));
-        pushButton_3 = new QPushButton(HomePage);
-        pushButton_3->setObjectName("pushButton_3");
-        pushButton_3->setGeometry(QRect(410, 410, 91, 41));
-        pushButton_3->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        studyTimerButton = new QPushButton(HomePage);
+        studyTimerButton->setObjectName("studyTimerButton");
+        studyTimerButton->setGeometry(QRect(410, 410, 91, 41));
+        studyTimerButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    background-color: #4CAF50;\n"
 "    color: white;\n"
 "    font: bold 8pt \"Segoe UI\";\n"
@@ -250,6 +252,29 @@ public:
 "QPushButton:pressed {\n"
 "    background-color: #3d8c40;\n"
 "}"));
+        coursesButton = new QPushButton(HomePage);
+        coursesButton->setObjectName("coursesButton");
+        coursesButton->setGeometry(QRect(200, 73, 91, 31));
+        QFont font;
+        font.setFamilies({QString::fromUtf8("Segoe UI")});
+        font.setPointSize(11);
+        font.setBold(true);
+        font.setItalic(false);
+        coursesButton->setFont(font);
+        coursesButton->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
+        coursesButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"    background: transparent;\n"
+"    border: none;\n"
+"    font: bold 11pt \"Segoe UI\";\n"
+"    color: #333;\n"
+"    text-align: left;\n"
+"    padding-left: 10px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    text-decoration: underline;\n"
+"}\n"
+""));
+        coursesButton->setFlat(true);
 
         retranslateUi(HomePage);
 
@@ -259,7 +284,7 @@ public:
     void retranslateUi(QWidget *HomePage)
     {
         HomePage->setWindowTitle(QCoreApplication::translate("HomePage", "Form", nullptr));
-        coursesBox->setTitle(QCoreApplication::translate("HomePage", "Courses:", nullptr));
+        coursesBox->setTitle(QCoreApplication::translate("HomePage", "Courses: ", nullptr));
         addCourseButton->setText(QCoreApplication::translate("HomePage", "Add Course", nullptr));
         friendsBox->setTitle(QCoreApplication::translate("HomePage", "Friends:", nullptr));
         addFriendButton->setText(QCoreApplication::translate("HomePage", "Add Friend", nullptr));
@@ -267,14 +292,15 @@ public:
         label_2->setText(QCoreApplication::translate("HomePage", "Overall Rank", nullptr));
         imageLabel->setText(QCoreApplication::translate("HomePage", "*IMAGE HERE*", nullptr));
         studyHoursLabel->setText(QCoreApplication::translate("HomePage", "Total Study Hours: 74", nullptr));
-        pushButton_5->setText(QCoreApplication::translate("HomePage", "Help (?)", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("HomePage", "Log Study \n"
+        helpButton->setText(QCoreApplication::translate("HomePage", "Help (?)", nullptr));
+        logHoursButton->setText(QCoreApplication::translate("HomePage", "Log Study \n"
 "Hours", nullptr));
-        pushButton_3->setText(QCoreApplication::translate("HomePage", "Start Study \n"
+        studyTimerButton->setText(QCoreApplication::translate("HomePage", "Start Study \n"
 "Timer", nullptr));
         pushButton_4->setText(QCoreApplication::translate("HomePage", "Input \n"
 "Grade", nullptr));
         logoutButton->setText(QCoreApplication::translate("HomePage", "Log Out", nullptr));
+        coursesButton->setText(QCoreApplication::translate("HomePage", "Courses:", nullptr));
     } // retranslateUi
 
 };

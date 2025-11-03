@@ -1,5 +1,6 @@
 C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/376_Project_autogen/EWIEGA46WW/moc_homepage.cpp: C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/homepage.h \
   C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/376_Project_autogen/moc_predefs.h \
+  C:/Qt/6.9.2/mingw_64/include/QtCore/QEventLoop \
   C:/Qt/6.9.2/mingw_64/include/QtCore/QFlags \
   C:/Qt/6.9.2/mingw_64/include/QtCore/QIODevice \
   C:/Qt/6.9.2/mingw_64/include/QtCore/QJsonArray \
@@ -10,6 +11,7 @@ C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinG
   C:/Qt/6.9.2/mingw_64/include/QtCore/QObject \
   C:/Qt/6.9.2/mingw_64/include/QtCore/QSharedDataPointer \
   C:/Qt/6.9.2/mingw_64/include/QtCore/QString \
+  C:/Qt/6.9.2/mingw_64/include/QtCore/QTimer \
   C:/Qt/6.9.2/mingw_64/include/QtCore/QUrl \
   C:/Qt/6.9.2/mingw_64/include/QtCore/QVariant \
   C:/Qt/6.9.2/mingw_64/include/QtCore/q17memory.h \
@@ -20,6 +22,8 @@ C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinG
   C:/Qt/6.9.2/mingw_64/include/QtCore/q20utility.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/q23utility.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/q26numeric.h \
+  C:/Qt/6.9.2/mingw_64/include/QtCore/qabstracteventdispatcher.h \
+  C:/Qt/6.9.2/mingw_64/include/QtCore/qabstractitemmodel.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qalgorithms.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qanystringview.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qarraydata.h \
@@ -29,6 +33,7 @@ C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinG
   C:/Qt/6.9.2/mingw_64/include/QtCore/qatomic.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qatomic_cxx11.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qbasicatomic.h \
+  C:/Qt/6.9.2/mingw_64/include/QtCore/qbasictimer.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qbindingstorage.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qbytearray.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qbytearrayalgorithms.h \
@@ -52,8 +57,11 @@ C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinG
   C:/Qt/6.9.2/mingw_64/include/QtCore/qdarwinhelpers.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qdatastream.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qdatetime.h \
+  C:/Qt/6.9.2/mingw_64/include/QtCore/qdeadlinetimer.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qdebug.h \
+  C:/Qt/6.9.2/mingw_64/include/QtCore/qelapsedtimer.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qendian.h \
+  C:/Qt/6.9.2/mingw_64/include/QtCore/qeventloop.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qexceptionhandling.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qflags.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qfloat16.h \
@@ -67,6 +75,7 @@ C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinG
   C:/Qt/6.9.2/mingw_64/include/QtCore/qhashfunctions.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qiodevice.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qiodevicebase.h \
+  C:/Qt/6.9.2/mingw_64/include/QtCore/qitemselectionmodel.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qiterable.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qiterator.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qjsonarray.h \
@@ -135,6 +144,7 @@ C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinG
   C:/Qt/6.9.2/mingw_64/include/QtCore/qtenvironmentvariables.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qtextstream.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qtformat_impl.h \
+  C:/Qt/6.9.2/mingw_64/include/QtCore/qtimer.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qtmetamacros.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qtnoop.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qtpreprocessorsupport.h \
@@ -177,6 +187,7 @@ C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinG
   C:/Qt/6.9.2/mingw_64/include/QtGui/qtguiexports.h \
   C:/Qt/6.9.2/mingw_64/include/QtGui/qtguiglobal.h \
   C:/Qt/6.9.2/mingw_64/include/QtGui/qtransform.h \
+  C:/Qt/6.9.2/mingw_64/include/QtGui/qvalidator.h \
   C:/Qt/6.9.2/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.9.2/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.9.2/mingw_64/include/QtNetwork/QNetworkAccessManager \
@@ -201,9 +212,24 @@ C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinG
   C:/Qt/6.9.2/mingw_64/include/QtNetwork/qtnetworkexports.h \
   C:/Qt/6.9.2/mingw_64/include/QtNetwork/qtnetworkglobal.h \
   C:/Qt/6.9.2/mingw_64/include/QtWidgets/QDialog \
+  C:/Qt/6.9.2/mingw_64/include/QtWidgets/QListWidgetItem \
   C:/Qt/6.9.2/mingw_64/include/QtWidgets/QWidget \
+  C:/Qt/6.9.2/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+  C:/Qt/6.9.2/mingw_64/include/QtWidgets/qabstractitemview.h \
+  C:/Qt/6.9.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+  C:/Qt/6.9.2/mingw_64/include/QtWidgets/qabstractslider.h \
+  C:/Qt/6.9.2/mingw_64/include/QtWidgets/qabstractspinbox.h \
   C:/Qt/6.9.2/mingw_64/include/QtWidgets/qdialog.h \
+  C:/Qt/6.9.2/mingw_64/include/QtWidgets/qframe.h \
+  C:/Qt/6.9.2/mingw_64/include/QtWidgets/qlistview.h \
+  C:/Qt/6.9.2/mingw_64/include/QtWidgets/qlistwidget.h \
+  C:/Qt/6.9.2/mingw_64/include/QtWidgets/qrubberband.h \
   C:/Qt/6.9.2/mingw_64/include/QtWidgets/qsizepolicy.h \
+  C:/Qt/6.9.2/mingw_64/include/QtWidgets/qslider.h \
+  C:/Qt/6.9.2/mingw_64/include/QtWidgets/qstyle.h \
+  C:/Qt/6.9.2/mingw_64/include/QtWidgets/qstyleoption.h \
+  C:/Qt/6.9.2/mingw_64/include/QtWidgets/qtabbar.h \
+  C:/Qt/6.9.2/mingw_64/include/QtWidgets/qtabwidget.h \
   C:/Qt/6.9.2/mingw_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.9.2/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.9.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -421,7 +447,15 @@ C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinG
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
-  C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/coursecreate.h \
-  C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/courses.h \
+  C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/addfrienddialog.h \
+  C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/course.h \
+  C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/coursecreatedialog.h \
+  C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/coursedata.h \
   C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/database.h \
-  C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/rank_type.h
+  C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/errordialog.h \
+  C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/friend_data.h \
+  C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/helpdialog.h \
+  C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/loghoursdialog.h \
+  C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/rank_type.h \
+  C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/timerdialog.h \
+  C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/userdata.h

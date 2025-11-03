@@ -1,5 +1,6 @@
 C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/376_Project_autogen/EWIEGA46WW/moc_database.cpp: C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/database.h \
   C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/376_Project_autogen/moc_predefs.h \
+  C:/Qt/6.9.2/mingw_64/include/QtCore/QEventLoop \
   C:/Qt/6.9.2/mingw_64/include/QtCore/QFlags \
   C:/Qt/6.9.2/mingw_64/include/QtCore/QIODevice \
   C:/Qt/6.9.2/mingw_64/include/QtCore/QJsonArray \
@@ -52,8 +53,11 @@ C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinG
   C:/Qt/6.9.2/mingw_64/include/QtCore/qdarwinhelpers.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qdatastream.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qdatetime.h \
+  C:/Qt/6.9.2/mingw_64/include/QtCore/qdeadlinetimer.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qdebug.h \
+  C:/Qt/6.9.2/mingw_64/include/QtCore/qelapsedtimer.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qendian.h \
+  C:/Qt/6.9.2/mingw_64/include/QtCore/qeventloop.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qexceptionhandling.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qflags.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qfloat16.h \
@@ -382,5 +386,8 @@ C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinG
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
-  C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/courses.h \
-  C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/rank_type.h
+  C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/course.h \
+  C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/coursedata.h \
+  C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/friend_data.h \
+  C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/rank_type.h \
+  C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/userdata.h

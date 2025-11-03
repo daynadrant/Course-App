@@ -7,18 +7,22 @@
 #include <QJsonObject>
 #include <QJsonDocument>
 #include <QJsonArray>
-#include <vector>
+#include <QEventLoop>
+#include "userdata.h"
+#include "coursedata.h"
+#include "friend_data.h"
 #include "rank_type.h"
-#include "courses.h"
+#include "course.h"
 
 class Database : public QObject
 {
     Q_OBJECT
 
 signals:
-    void populateHomePage(const QString& username,
-                     RankType rank,
-                     int studyHours);
+    void populateHomePage();
+    void populateCoursePage(Course* course);
+    void loginFailed();
+    void refreshStudyHours();
 
 private:
     const QByteArray apiKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBh" \
@@ -28,19 +32,16 @@ private:
 
     QNetworkAccessManager manager;
 
-    // User data
-    QString userId;
-    QString accessToken;
-    QString refreshToken;
-    QString username;
-    RankType rank;
-    int studyHours;
-    std::vector<QString> friends;
-    std::vector<Course> courses;
+    // Data
+    UserData userData;
+    CourseData courseData;
+    FriendData friendData;
 
 public:
     explicit Database(QObject* parent = nullptr);
     ~Database();
+
+    void clear();
 
     void createUser(const QString& username,
                     const QString& email,
@@ -50,7 +51,20 @@ public:
                    const QString& email,
                    const QString& password);
 
-    void createCourse(const QString& name);
+    bool createCourse(const QString& courseName);
+    void loadCoursePage(const QString& courseName);
+
+    bool addFriend(const QString& userName);
+
+    void addStudyHours(int hours);
+    void setStudyHours(int totalHours);
+
+    const std::vector<Course>& getCourses() const;
+    RankType getCareerRank() const;
+
+    QString getUsername() const;
+    RankType getRank() const;
+    int getStudyHours() const;
 
 private:
     void loginRequest(const QUrl& url,
@@ -59,6 +73,10 @@ private:
                       const QString& password);
 
     void fetchUserData();
+
+    void addFriend();
+
+    void updateStudyHours(int newTotal);
 };
 
 #endif // DATABASE_H

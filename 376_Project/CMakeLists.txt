@@ -9,8 +9,8 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets Network)
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Network)
+find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Charts Widgets Network)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Charts Widgets Network)
 
 set(PROJECT_SOURCES
         main.cpp
@@ -25,13 +25,26 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ${PROJECT_SOURCES}
 
         homepage.h homepage.cpp homepage.ui
-        loginpage.h loginpage.cpp loginpage.ui login.ui
+        loginpage.h loginpage.cpp loginpage.ui
         database.h database.cpp
         rank_type.h
         resource.qrc
-        courses.h
-        courses.cpp
-        coursecreate.h coursecreate.cpp coursecreate.ui
+        course.h
+        course.cpp
+        coursecreatedialog.h coursecreatedialog.cpp coursecreatedialog.ui
+        coursedata.h coursedata.cpp
+        friend_data.h friend_data.cpp
+        helpdialog.cpp helpdialog.h helpdialog.ui userdata.cpp userdata.h
+        loadingdialog.h loadingdialog.cpp loadingdialog.ui
+        errordialog.h errordialog.cpp errordialog.ui
+
+
+
+        coursepage.h coursepage.cpp coursepage.ui
+        loghoursdialog.h loghoursdialog.cpp loghoursdialog.ui
+        addfrienddialog.h addfrienddialog.cpp addfrienddialog.ui
+        timerdialog.h timerdialog.cpp timerdialog.ui
+        allcoursespage.cpp allcoursespage.h allcoursespage.ui
 
 
 
@@ -57,6 +70,7 @@ else()
 endif()
 
 target_link_libraries(376_Project PRIVATE
+    Qt${QT_VERSION_MAJOR}::Charts
     Qt${QT_VERSION_MAJOR}::Widgets
     Qt${QT_VERSION_MAJOR}::Network)
 
