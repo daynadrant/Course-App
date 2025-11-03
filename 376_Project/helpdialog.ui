@@ -63,9 +63,9 @@
        </font>
       </property>
       <property name="text">
-       <string>Welcome to &quot;application name&quot;! With this app you'll transform your studies into a ranked experience for you and your friends to enjoy!
+       <string>Welcome to the Course Grade &amp; Productivity App! With this app you'll transform your studies into a ranked experience for you and your friends to enjoy!
 
-You can track courses by adding them to your profile with the 'Add Course' button. As you receive your grades in a course, input them with the 'Input Grade' button. Make sure to also log study hours when possible — it will help boost your rank. If you start a study timer, the timer will automatically log the time spent.
+You can track courses by adding them to your profile with the 'Add Course' button. As you receive your grades in a course, input them with the 'Input Grade' button. Make sure to also log study hours when possible - it will help boost your rank. If you start a study timer, the timer will automatically log the time spent.
 
 You will have a rank for individual courses, as well as a cumulative rank which is seen on the homepage. Make sure to add your friends and keep up with each others' ranks!
 </string>
