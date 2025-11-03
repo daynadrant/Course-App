@@ -65,7 +65,7 @@ CoursePage::~CoursePage()
     delete ui;
 }
 
-void CoursePage::on_BackButton_clicked()
+void CoursePage::on_backButton_clicked()
 {
     emit closeCoursePage();
 }

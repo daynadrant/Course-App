@@ -26,7 +26,7 @@ public:
     ~CoursePage();
 
 private slots:
-    void on_BackButton_clicked();
+    void on_backButton_clicked();
 
 private:
     Ui::CoursePage *ui;

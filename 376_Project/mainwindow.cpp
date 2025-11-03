@@ -11,12 +11,14 @@ MainWindow::MainWindow(QWidget *parent)
     home = new HomePage(database, this);
     course = new CoursePage(database, this);
     allCourses = new AllCoursesPage(database, this);
+    fpage = new FriendPage(database, this);
 
     // Add pages
     ui->stackedWidget->addWidget(login);
     ui->stackedWidget->addWidget(home);
     ui->stackedWidget->addWidget(course);
     ui->stackedWidget->addWidget(allCourses);
+    ui->stackedWidget->addWidget(fpage);
 
     // Set up listeners
     if (login)
@@ -84,6 +86,17 @@ MainWindow::MainWindow(QWidget *parent)
         });
 
         connect(allCourses, &AllCoursesPage::goBackHome, this, [this]() {
+            ui->stackedWidget->setCurrentWidget(home);
+        });
+    }
+
+    if (fpage)
+    {
+        connect(fpage, &FriendPage::goToFriendPage, this, [this]() {
+            ui->stackedWidget->setCurrentWidget(fpage);
+        });
+
+        connect(fpage, &FriendPage::closeFriendPage, this, [this]() {
             ui->stackedWidget->setCurrentWidget(home);
         });
     }

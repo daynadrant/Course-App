@@ -240,6 +240,9 @@ QPushButton:pressed {
    <property name="text">
     <string>*IMAGE HERE*</string>
    </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
   </widget>
   <widget class="QLabel" name="studyHoursLabel">
    <property name="geometry">

@@ -44,6 +44,13 @@ HomePage::HomePage(Database* database, QWidget* parent)
             ui->coursesList->addItem(course.getName());
         }
 
+        // Add friends to friends list
+        auto friends = this->database->getFriends();
+        for (const Friend& f : friends)
+        {
+            ui->friendsList->addItem(f.username);
+        }
+
         // Ready to switch to the home page
         emit login();
     });
@@ -123,6 +130,11 @@ void HomePage::on_helpButton_clicked()
 void HomePage::on_coursesList_itemDoubleClicked(QListWidgetItem* item)
 {
     database->loadCoursePage(item->text());
+}
+
+void HomePage::on_friendsList_itemDoubleClicked(QListWidgetItem *item)
+{
+    database->loadFriendPage(item->text());
 }
 
 void HomePage::on_addFriendButton_clicked()
@@ -208,3 +220,4 @@ void HomePage::on_coursesButton_clicked()
 {
     emit goToCourses();
 }
+

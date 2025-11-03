@@ -526,6 +526,7 @@ C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/build/Desktop_Qt_6_9_2_MinG
   C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/database.h \
   C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/errordialog.h \
   C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/friend_data.h \
+  C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/friendpage.h \
   C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/helpdialog.h \
   C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/homepage.h \
   C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/loadingdialog.h \

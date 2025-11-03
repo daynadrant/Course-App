@@ -150,6 +150,13 @@ bool Database::addFriend(const QString& userName)
     return true;
 }
 
+void Database::loadFriendPage(const QString& friendName)
+{
+    Friend* f = this->friendData.findFriend(friendName);
+
+    emit populateFriendPage(f);
+}
+
 void Database::addStudyHours(int hours)
 {
     int studyHours = this->getStudyHours() + hours;
@@ -208,6 +215,12 @@ RankType Database::getCareerRank() const
     else
         return RankType::BEGINNER;
 }
+
+const std::vector<Friend>& Database::getFriends() const
+{
+    return this->friendData.getFriends();
+}
+
 
 QString Database::getUsername() const
 {
@@ -363,6 +376,67 @@ void Database::fetchUserData()
             obj["study_hours"].toDouble(),
             static_cast<RankType>(obj["rank"].toInt()),
             obj["enrolled"].toBool());
+    }
+
+    reply->deleteLater();
+
+    // Select all data we want from friends table
+    request.setUrl("https://gmhrsbcdzksllhvrncgn.supabase.co/rest/v1/friends?profile_id=eq."
+                   + this->userData.getUserId());
+
+    reply = manager.get(request);
+
+    QObject::connect(reply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
+    loop.exec();
+
+    if (reply->error() != QNetworkReply::NoError)
+    {
+        qDebug() << "Error fetching courses:" << reply->errorString();
+        return;
+    }
+
+    response = reply->readAll();
+    doc = QJsonDocument::fromJson(response);
+    reply->deleteLater();
+
+    // No data was returned
+    if (!doc.isArray() || doc.array().isEmpty())
+    {
+        qDebug() << "No friends found.";
+        emit populateHomePage();
+        return;
+    }
+
+    // Add all of the friends
+    QJsonArray friends = doc.array();
+    for (const QJsonValue &val : friends)
+    {
+        QJsonObject obj = val.toObject();
+
+        request.setUrl("https://gmhrsbcdzksllhvrncgn.supabase.co/rest/v1/profiles?select=username,rank,study_hours&id=eq."
+                       + obj["friend_id"].toString());
+
+        reply = manager.get(request);
+
+        QObject::connect(reply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
+        loop.exec();
+
+        if (reply->error() != QNetworkReply::NoError)
+        {
+            qDebug() << "Error fetching user:" << reply->errorString();
+            return;
+        }
+
+        response = reply->readAll();
+        doc = QJsonDocument::fromJson(response);
+        reply->deleteLater();
+
+        QJsonObject friendObj = doc.array().first().toObject();
+
+        this->friendData.addFriend(
+            friendObj["username"].toString(),
+            static_cast<RankType>(friendObj["rank"].toInt()),
+            friendObj["study_hours"].toInt());
     }
 
     reply->deleteLater();

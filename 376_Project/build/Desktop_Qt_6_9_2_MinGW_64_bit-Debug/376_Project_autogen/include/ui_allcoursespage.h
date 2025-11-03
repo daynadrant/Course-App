@@ -10,11 +10,12 @@
 #define UI_ALLCOURSESPAGE_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QCommandLinkButton>
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QListWidget>
-#include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -32,8 +33,8 @@ public:
     QListWidget *coursesList;
     QLabel *averageGradeLabel;
     QLabel *rankIconLabel;
-    QPushButton *backButton;
     QLabel *careerRankLabel;
+    QCommandLinkButton *backButton;
 
     void setupUi(QWidget *AllCoursesPage)
     {
@@ -73,13 +74,17 @@ public:
         rankIconLabel->setGeometry(QRect(340, 160, 191, 201));
         rankIconLabel->setScaledContents(true);
         rankIconLabel->setAlignment(Qt::AlignmentFlag::AlignCenter);
-        backButton = new QPushButton(AllCoursesPage);
-        backButton->setObjectName("backButton");
-        backButton->setGeometry(QRect(10, 10, 80, 24));
         careerRankLabel = new QLabel(AllCoursesPage);
         careerRankLabel->setObjectName("careerRankLabel");
         careerRankLabel->setGeometry(QRect(338, 120, 201, 20));
         careerRankLabel->setAlignment(Qt::AlignmentFlag::AlignCenter);
+        backButton = new QCommandLinkButton(AllCoursesPage);
+        backButton->setObjectName("backButton");
+        backButton->setGeometry(QRect(10, 10, 31, 33));
+        backButton->setCursor(QCursor(Qt::CursorShape::ArrowCursor));
+        QIcon icon(QIcon::fromTheme(QIcon::ThemeIcon::WindowClose));
+        backButton->setIcon(icon);
+        backButton->setIconSize(QSize(16, 16));
 
         retranslateUi(AllCoursesPage);
 
@@ -97,8 +102,8 @@ public:
         efficientCourseLabel->setText(QCoreApplication::translate("AllCoursesPage", "Most Efficient Course: ", nullptr));
         coursesGroupBox->setTitle(QCoreApplication::translate("AllCoursesPage", "All Courses:", nullptr));
         averageGradeLabel->setText(QCoreApplication::translate("AllCoursesPage", "Average grade: --%", nullptr));
-        backButton->setText(QCoreApplication::translate("AllCoursesPage", "Back", nullptr));
         careerRankLabel->setText(QCoreApplication::translate("AllCoursesPage", "Career Rank: --", nullptr));
+        backButton->setText(QString());
     } // retranslateUi
 
 };

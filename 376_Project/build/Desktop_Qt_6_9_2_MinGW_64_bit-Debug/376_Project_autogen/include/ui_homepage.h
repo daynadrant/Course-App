@@ -164,6 +164,7 @@ public:
 "    min-height: 100px;\n"
 "    min-width: 100px;\n"
 "}"));
+        imageLabel->setAlignment(Qt::AlignmentFlag::AlignCenter);
         studyHoursLabel = new QLabel(HomePage);
         studyHoursLabel->setObjectName("studyHoursLabel");
         studyHoursLabel->setGeometry(QRect(360, 370, 191, 21));

@@ -823,6 +823,8 @@
 	C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/errordialog.h \
 	C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/friend_data.cpp \
 	C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/friend_data.h \
+	C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/friendpage.cpp \
+	C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/friendpage.h \
 	C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/helpdialog.cpp \
 	C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/helpdialog.h \
 	C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/homepage.cpp \
@@ -847,6 +849,7 @@
 	C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/coursecreatedialog.ui \
 	C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/coursepage.ui \
 	C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/errordialog.ui \
+	C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/friendpage.ui \
 	C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/helpdialog.ui \
 	C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/homepage.ui \
 	C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/loadingdialog.ui \

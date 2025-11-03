@@ -52,6 +52,7 @@ template <> constexpr inline auto HomePage::qt_create_metaobjectdata<qt_meta_tag
         "on_coursesList_itemDoubleClicked",
         "QListWidgetItem*",
         "item",
+        "on_friendsList_itemDoubleClicked",
         "on_addFriendButton_clicked",
         "on_logHoursButton_clicked",
         "on_studyTimerButton_clicked",
@@ -79,14 +80,18 @@ template <> constexpr inline auto HomePage::qt_create_metaobjectdata<qt_meta_tag
         QtMocHelpers::SlotData<void(QListWidgetItem *)>(10, 2, QMC::AccessPrivate, QMetaType::Void, {{
             { 0x80000000 | 11, 12 },
         }}),
+        // Slot 'on_friendsList_itemDoubleClicked'
+        QtMocHelpers::SlotData<void(QListWidgetItem *)>(13, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { 0x80000000 | 11, 12 },
+        }}),
         // Slot 'on_addFriendButton_clicked'
-        QtMocHelpers::SlotData<void()>(13, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'on_logHoursButton_clicked'
         QtMocHelpers::SlotData<void()>(14, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'on_studyTimerButton_clicked'
+        // Slot 'on_logHoursButton_clicked'
         QtMocHelpers::SlotData<void()>(15, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'on_coursesButton_clicked'
+        // Slot 'on_studyTimerButton_clicked'
         QtMocHelpers::SlotData<void()>(16, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_coursesButton_clicked'
+        QtMocHelpers::SlotData<void()>(17, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -118,10 +123,11 @@ void HomePage::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
         case 5: _t->on_addCourseButton_clicked(); break;
         case 6: _t->on_helpButton_clicked(); break;
         case 7: _t->on_coursesList_itemDoubleClicked((*reinterpret_cast< std::add_pointer_t<QListWidgetItem*>>(_a[1]))); break;
-        case 8: _t->on_addFriendButton_clicked(); break;
-        case 9: _t->on_logHoursButton_clicked(); break;
-        case 10: _t->on_studyTimerButton_clicked(); break;
-        case 11: _t->on_coursesButton_clicked(); break;
+        case 8: _t->on_friendsList_itemDoubleClicked((*reinterpret_cast< std::add_pointer_t<QListWidgetItem*>>(_a[1]))); break;
+        case 9: _t->on_addFriendButton_clicked(); break;
+        case 10: _t->on_logHoursButton_clicked(); break;
+        case 11: _t->on_studyTimerButton_clicked(); break;
+        case 12: _t->on_coursesButton_clicked(); break;
         default: ;
         }
     }
@@ -156,14 +162,14 @@ int HomePage::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 12)
+        if (_id < 13)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 12;
+        _id -= 13;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 12)
+        if (_id < 13)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 12;
+        _id -= 13;
     }
     return _id;
 }

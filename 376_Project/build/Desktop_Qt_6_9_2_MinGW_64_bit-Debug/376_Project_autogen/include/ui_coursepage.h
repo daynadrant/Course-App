@@ -31,13 +31,13 @@ public:
     QPushButton *loginButton_3;
     QPushButton *loginButton_4;
     QLabel *rankLabel;
-    QCommandLinkButton *BackButton;
     QChartView *graphicsViewChart;
     QWidget *layoutWidget;
     QVBoxLayout *verticalLayout;
     QLabel *studyHoursLabel;
     QLabel *currentGradeLabel;
     QLabel *studyHoursLabel_3;
+    QCommandLinkButton *backButton;
 
     void setupUi(QWidget *CoursePage)
     {
@@ -141,12 +141,7 @@ public:
 "    min-height: 100px;\n"
 "    min-width: 100px;\n"
 "}"));
-        BackButton = new QCommandLinkButton(CoursePage);
-        BackButton->setObjectName("BackButton");
-        BackButton->setGeometry(QRect(200, 100, 41, 41));
-        BackButton->setCursor(QCursor(Qt::CursorShape::ArrowCursor));
-        QIcon icon(QIcon::fromTheme(QIcon::ThemeIcon::WindowClose));
-        BackButton->setIcon(icon);
+        rankLabel->setAlignment(Qt::AlignmentFlag::AlignCenter);
         graphicsViewChart = new QChartView(CoursePage);
         graphicsViewChart->setObjectName("graphicsViewChart");
         graphicsViewChart->setGeometry(QRect(550, 110, 241, 221));
@@ -184,6 +179,13 @@ public:
 "    color: #222;\n"
 "}"));
         studyHoursLabel_3->setAlignment(Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter);
+        backButton = new QCommandLinkButton(CoursePage);
+        backButton->setObjectName("backButton");
+        backButton->setGeometry(QRect(10, 10, 31, 33));
+        backButton->setCursor(QCursor(Qt::CursorShape::ArrowCursor));
+        QIcon icon(QIcon::fromTheme(QIcon::ThemeIcon::WindowClose));
+        backButton->setIcon(icon);
+        backButton->setIconSize(QSize(16, 16));
         QWidget::setTabOrder(loginButton, createButton);
 
         retranslateUi(CoursePage);
@@ -201,10 +203,10 @@ public:
         loginButton_3->setText(QCoreApplication::translate("CoursePage", "Edit Course", nullptr));
         loginButton_4->setText(QCoreApplication::translate("CoursePage", "Complete", nullptr));
         rankLabel->setText(QCoreApplication::translate("CoursePage", "*IMAGE HERE*", nullptr));
-        BackButton->setText(QString());
         studyHoursLabel->setText(QCoreApplication::translate("CoursePage", "Course Study Hours:", nullptr));
         currentGradeLabel->setText(QCoreApplication::translate("CoursePage", "Current Grade:", nullptr));
         studyHoursLabel_3->setText(QCoreApplication::translate("CoursePage", "Grades Achieved:", nullptr));
+        backButton->setText(QString());
     } // retranslateUi
 
 };

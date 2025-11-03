@@ -41,6 +41,8 @@ private slots:
 
     void on_coursesList_itemDoubleClicked(QListWidgetItem* item);
 
+    void on_friendsList_itemDoubleClicked(QListWidgetItem *item);
+
     void on_addFriendButton_clicked();
 
     void on_logHoursButton_clicked();

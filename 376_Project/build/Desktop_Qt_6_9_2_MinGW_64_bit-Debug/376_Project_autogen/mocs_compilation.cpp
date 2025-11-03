@@ -5,6 +5,7 @@
 #include "EWIEGA46WW/moc_coursepage.cpp"
 #include "EWIEGA46WW/moc_database.cpp"
 #include "EWIEGA46WW/moc_errordialog.cpp"
+#include "EWIEGA46WW/moc_friendpage.cpp"
 #include "EWIEGA46WW/moc_helpdialog.cpp"
 #include "EWIEGA46WW/moc_homepage.cpp"
 #include "EWIEGA46WW/moc_loadingdialog.cpp"

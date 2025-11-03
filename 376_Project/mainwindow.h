@@ -9,6 +9,7 @@
 #include "loadingdialog.h"
 #include "errordialog.h"
 #include "allcoursespage.h"
+#include "friendpage.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -29,6 +30,7 @@ private:
     HomePage* home;
     CoursePage* course;
     AllCoursesPage* allCourses;
+    FriendPage* fpage;
 
     // Loading screen
     LoadingDialog* loading = nullptr;

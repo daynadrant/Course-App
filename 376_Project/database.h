@@ -21,6 +21,7 @@ class Database : public QObject
 signals:
     void populateHomePage();
     void populateCoursePage(Course* course);
+    void populateFriendPage(Friend* f);
     void loginFailed();
     void refreshStudyHours();
 
@@ -55,13 +56,14 @@ public:
     void loadCoursePage(const QString& courseName);
 
     bool addFriend(const QString& userName);
+    void loadFriendPage(const QString& friendName);
 
     void addStudyHours(int hours);
     void setStudyHours(int totalHours);
 
     const std::vector<Course>& getCourses() const;
     RankType getCareerRank() const;
-
+    const std::vector<Friend>& getFriends() const;
     QString getUsername() const;
     RankType getRank() const;
     int getStudyHours() const;

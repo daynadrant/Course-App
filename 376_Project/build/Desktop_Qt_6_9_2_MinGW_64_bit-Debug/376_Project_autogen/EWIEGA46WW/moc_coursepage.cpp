@@ -43,7 +43,7 @@ template <> constexpr inline auto CoursePage::qt_create_metaobjectdata<qt_meta_t
         "goToCoursePage",
         "",
         "closeCoursePage",
-        "on_BackButton_clicked"
+        "on_backButton_clicked"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -51,7 +51,7 @@ template <> constexpr inline auto CoursePage::qt_create_metaobjectdata<qt_meta_t
         QtMocHelpers::SignalData<void()>(1, 2, QMC::AccessPublic, QMetaType::Void),
         // Signal 'closeCoursePage'
         QtMocHelpers::SignalData<void()>(3, 2, QMC::AccessPublic, QMetaType::Void),
-        // Slot 'on_BackButton_clicked'
+        // Slot 'on_backButton_clicked'
         QtMocHelpers::SlotData<void()>(4, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
@@ -78,7 +78,7 @@ void CoursePage::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         switch (_id) {
         case 0: _t->goToCoursePage(); break;
         case 1: _t->closeCoursePage(); break;
-        case 2: _t->on_BackButton_clicked(); break;
+        case 2: _t->on_backButton_clicked(); break;
         default: ;
         }
     }

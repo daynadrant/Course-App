@@ -27,6 +27,10 @@ public:
     void addFriend(const QString& username,
                    RankType rank,
                    int studyHours);
+
+    const std::vector<Friend>& getFriends() const { return this->friends; }
+
+    Friend* findFriend(const QString& friendName);
 };
 
 #endif // FRIEND_DATA_H

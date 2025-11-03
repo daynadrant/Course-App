@@ -551,6 +551,12 @@
 			null
 		],
 		[
+			"C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/friendpage.h",
+			"MU",
+			"EWIEGA46WW/moc_friendpage.cpp",
+			null
+		],
+		[
 			"C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/helpdialog.h",
 			"MU",
 			"EWIEGA46WW/moc_helpdialog.cpp",
@@ -726,6 +732,11 @@
 		],
 		[
 			"C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/friend_data.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/cwnee/GitLab/Elec376_F25_group8/376_Project/friendpage.cpp",
 			"MU",
 			null
 		],

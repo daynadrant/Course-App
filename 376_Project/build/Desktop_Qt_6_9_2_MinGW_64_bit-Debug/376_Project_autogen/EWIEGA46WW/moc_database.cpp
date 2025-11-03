@@ -45,6 +45,9 @@ template <> constexpr inline auto Database::qt_create_metaobjectdata<qt_meta_tag
         "populateCoursePage",
         "Course*",
         "course",
+        "populateFriendPage",
+        "Friend*",
+        "f",
         "loginFailed",
         "refreshStudyHours"
     };
@@ -56,10 +59,14 @@ template <> constexpr inline auto Database::qt_create_metaobjectdata<qt_meta_tag
         QtMocHelpers::SignalData<void(Course *)>(3, 2, QMC::AccessPublic, QMetaType::Void, {{
             { 0x80000000 | 4, 5 },
         }}),
+        // Signal 'populateFriendPage'
+        QtMocHelpers::SignalData<void(Friend *)>(6, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { 0x80000000 | 7, 8 },
+        }}),
         // Signal 'loginFailed'
-        QtMocHelpers::SignalData<void()>(6, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::SignalData<void()>(9, 2, QMC::AccessPublic, QMetaType::Void),
         // Signal 'refreshStudyHours'
-        QtMocHelpers::SignalData<void()>(7, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::SignalData<void()>(10, 2, QMC::AccessPublic, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -85,8 +92,9 @@ void Database::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
         switch (_id) {
         case 0: _t->populateHomePage(); break;
         case 1: _t->populateCoursePage((*reinterpret_cast< std::add_pointer_t<Course*>>(_a[1]))); break;
-        case 2: _t->loginFailed(); break;
-        case 3: _t->refreshStudyHours(); break;
+        case 2: _t->populateFriendPage((*reinterpret_cast< std::add_pointer_t<Friend*>>(_a[1]))); break;
+        case 3: _t->loginFailed(); break;
+        case 4: _t->refreshStudyHours(); break;
         default: ;
         }
     }
@@ -95,9 +103,11 @@ void Database::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
             return;
         if (QtMocHelpers::indexOfMethod<void (Database::*)(Course * )>(_a, &Database::populateCoursePage, 1))
             return;
-        if (QtMocHelpers::indexOfMethod<void (Database::*)()>(_a, &Database::loginFailed, 2))
+        if (QtMocHelpers::indexOfMethod<void (Database::*)(Friend * )>(_a, &Database::populateFriendPage, 2))
             return;
-        if (QtMocHelpers::indexOfMethod<void (Database::*)()>(_a, &Database::refreshStudyHours, 3))
+        if (QtMocHelpers::indexOfMethod<void (Database::*)()>(_a, &Database::loginFailed, 3))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (Database::*)()>(_a, &Database::refreshStudyHours, 4))
             return;
     }
 }
@@ -121,14 +131,14 @@ int Database::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 4)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 5;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 4)
+        if (_id < 5)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 4;
+        _id -= 5;
     }
     return _id;
 }
@@ -146,14 +156,20 @@ void Database::populateCoursePage(Course * _t1)
 }
 
 // SIGNAL 2
-void Database::loginFailed()
+void Database::populateFriendPage(Friend * _t1)
 {
-    QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
+    QMetaObject::activate<void>(this, &staticMetaObject, 2, nullptr, _t1);
 }
 
 // SIGNAL 3
-void Database::refreshStudyHours()
+void Database::loginFailed()
 {
     QMetaObject::activate(this, &staticMetaObject, 3, nullptr);
+}
+
+// SIGNAL 4
+void Database::refreshStudyHours()
+{
+    QMetaObject::activate(this, &staticMetaObject, 4, nullptr);
 }
 QT_WARNING_POP

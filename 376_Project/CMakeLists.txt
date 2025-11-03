@@ -45,6 +45,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         addfrienddialog.h addfrienddialog.cpp addfrienddialog.ui
         timerdialog.h timerdialog.cpp timerdialog.ui
         allcoursespage.cpp allcoursespage.h allcoursespage.ui
+        friendpage.h friendpage.cpp friendpage.ui
 
 
 
